@@ -25,16 +25,11 @@ export function FloatingNavDemo() {
       link: "#projects",
       icon: <IconUser className="h-6 w-6 text-neutral-500 dark:text-white" />,
     },
-    {
-      name: "Contact",
-      link: "#contact",
-      icon: <IconMessage className="h-6 w-6 text-neutral-500 dark:text-white" />,
-    },
   ];
 
   return (
     <div className="relative w-full">
-      <FloatingNav navItems={navItems} className="bg-gray-800 text-white py-4 px-6 shadow-lg fixed w-full z-10 top-0 flex justify-center items-center" />
+      <FloatingNav navItems={navItems} className="bg-zinc-900 text-white py-4 px-6 shadow-lg fixed w-full z-10 top-0 flex justify-center items-center" />
     </div>
   );
 }
