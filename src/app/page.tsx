@@ -1,23 +1,20 @@
-"use client";
-import React from "react";
-import { AuroraBackground } from "@/components/ui/aurora-background";
-import  {FloatingNavDemo} from "@/components/custom/navbar";
-import { TextGenerateEffectDemo } from "@/components/custom/text-effect";
+import React from 'react';
+import Hero from '@/components/custom/hero';
+import Education from '@/components/custom/education/education';
+import Experience from '@/components/custom/experience/experience';
+import Projects from  '@/components/custom/projects';
+import Footer from   '@/components/custom/footer';
 
-
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <div>
-      <FloatingNavDemo />
-      <AuroraBackground>
-        <div className="text-center">
-          <TextGenerateEffectDemo />
-        </div>
-      </AuroraBackground>
-      <div className="bg-white dark:bg-black text-black dark:text-white p-8">
-        <h2 className="text-2xl font-bold">Main Content</h2>
-        <p>This is the main content below the Aurora background.</p>
-      </div>
+      <Hero />
+      <Education />
+      <Experience />
+      <Projects />
+      <Footer />
     </div>
   );
-}
+};
+
+export default HomePage;
